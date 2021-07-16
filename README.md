@@ -24,3 +24,9 @@ cp project/.env.sample project/.env
 ```
 
 If you want to use another directory for your project directory, replace `project` above with the name of your directory.
+
+
+
+Questions & Plans: 
+    1) where to add user login log out?? 
+
