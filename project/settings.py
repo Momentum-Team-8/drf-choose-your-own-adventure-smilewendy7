@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # Third-party
     'debug_toolbar',
     'django_extensions',
+    'rest_framework', 
 
     # Project-specific
     'core',
@@ -128,7 +129,6 @@ STATICFILES_DIRS = [
 ]
 
 # Custom user model
-
 AUTH_USER_MODEL = 'core.User'
 
 # Debug toolbar config
