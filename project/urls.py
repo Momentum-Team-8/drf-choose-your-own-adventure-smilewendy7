@@ -22,8 +22,10 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('books/', views.BookList.as_view()),
-    path('books/<int:pk>/', views.BookDetail.as_view()),
+    path('books/', views.BookList.as_view(), name='list'),
+    path('books/<int:pk>/', views.BookDetail.as_view(), name='detail'),
+    path('books/<int:pk>/edit/', views.BookUpdate.as_view(), name='update'),
+    path('books/<int:pk>/delete/', views.BookDelete.as_view(), name='delete'),
     path('featured/', views.FeaturedList.as_view()), 
 ]
 ##format_suffix_patterns is an optional choice that provides a simple, DRY way to refer to a specific file format for a URL endpoint. 

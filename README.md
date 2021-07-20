@@ -28,5 +28,13 @@ If you want to use another directory for your project directory, replace `projec
 
 
 Questions & Plans: 
+Q:
     1) where to add user login log out?? 
+    2) how to delete the database?
+    3) Insomnia
+    4) What's the relationships between app and project? 
 
+
+
+tips: 
+1) write views seperatly. create/delete/update ... 
